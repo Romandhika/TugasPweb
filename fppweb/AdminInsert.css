@@ -1,0 +1,452 @@
+.header {
+  background-color: white;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: Montserrat;
+}
+
+.logo {
+  font-family: Brandon Text;
+  font-size: 40pt;
+  color: rgb(60,60,60);
+}
+
+.logo2 {
+  font-size: 10pt;
+  font-family: Brandon Text;
+  color: rgb(60,60,60);
+}
+
+#centerMode {
+  text-align:center;
+}
+
+
+/*FOR SLIDE*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #053EFF; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0000FF;
+}
+
+/*FOR NAVBAR*/
+.navbar{
+	  overflow: hidden;
+  	background-color: white;
+    text-align: center;
+    font-family: Rockwell;
+}
+
+.navbar a, p{
+    float: none;
+    display: inline-block;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(60,60,60);
+}
+
+.navbar a:hover {
+  color: #053EFF;
+}
+
+.navbar a.active {
+  color: #0000FF;
+  background-color: transparent;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+.navbar a {
+	padding: 16px 0px;
+    display: block;
+    text-align: center;
+  }
+
+.navbar p {
+    display: none;
+  }
+
+}
+
+
+/* FOR MAIN WEBSITE */
+.main {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.row {
+  display: block;
+  margin: 10px 0px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.column {
+  display: inline-flex;
+  width: 100%;
+  height: 60px;
+  line-height: 1px;
+  border-radius:7px;
+  background-color: white;
+  box-shadow: 5px 5px 22px #CECECE;
+  transition: transform .2s;
+}
+
+.column:hover{
+  transform: scale(1.02);
+}
+
+.column img {
+  height: 40px;
+  margin: 10px auto 10px auto;
+}
+
+#filename{
+ width: 15%;
+}
+
+#heading{
+ width: 30%;
+}
+
+#heading p:hover{
+  cursor: pointer;
+  color: #053EFF;
+}
+
+#text{
+ width: 35%;
+}
+
+#filename, #heading, #text{
+ margin: auto 10px;
+}
+
+#filename p, #heading p, #text p{
+  font-size: 12px;
+}
+
+.panelButton{
+  text-align: center;
+}
+.centered{
+    margin:auto;
+        width: 800px;
+        padding: 10px;
+        border: none;
+        background: transparent;
+        font-family: Rockwell;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #053EFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat SemiBold;
+  font-size: 13px;
+  width: 180px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px 10px 20px 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  padding: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3C3C3C;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #053EFF;
+}
+
+@media screen and (max-width: 500px) {
+.main {
+  width: 100%;
+  }
+}
+
+
+input[type=text], input[type=file], textarea[type=textarea] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=file]{
+  background-color: transparent;
+}
+
+textarea[type=textarea] {
+  font-family: Arial;
+}
+
+/* Center the image and position the close button */
+.headerContainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    color: #3C3C3C;
+    position: relative;
+}
+
+.head {
+  color: #3C3C3C;
+  padding: 15px 120px 15px 120px;
+  text-align: center;
+}
+
+.insertButtonForm, .updateButtonForm{
+    background-color: #053EFF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Montserrat SemiBold;
+}
+
+.insertButtonForm:hover, .updateButtonForm:hover{
+    opacity: 0.8;
+}
+
+.insertButtonForm {
+  width: 100%;
+}
+
+.updateButtonForm {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container label{
+  color: #3C3C3C;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #053EFF;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+
+/*FOR FOOTER*/
+.footer {
+  border-top: 1px solid #CECECE;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  height: 15px;
+  padding: 1px 0px;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.footer a:hover {
+  color: #053EFF;
+}
+
+.footerLeft a{
+  float: left;
+  display: inline-block;
+  color: #919191;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footerRight a{
+  float: right;
+  display: inline-block;
+  color: #919191;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footerLeft a.active {
+  color: #0000FF;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    display: initial;
+    float: left;
+    height: 300px;
+  }
+
+  .column img {
+    margin: 10px auto 10px 25px;
+  }
+
+  #filename{
+   width: 100%;
+  }
+
+  #heading{
+   width: 100%;
+  }
+
+  #text{
+   width: 100%;
+  }
+
+  #filename, #heading, #text{
+   margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerLeft a, .footerRight a{
+    float: none;
+    }
+
+  .updateButtonForm{
+    width: 100%;
+  }
+}

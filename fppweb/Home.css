@@ -1,0 +1,341 @@
+.header {
+	background-color: white;
+	width: 100%;
+	padding: 25px 0px;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: Montserrat;
+}
+
+.logo {
+	font-family: Brandon Text;
+	font-size: 40pt;
+	color: rgb(60,60,60);
+}
+
+#centerMode {
+	text-align:center;
+}
+
+
+/*FOR SLIDE*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #053EFF; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0000FF;
+}
+
+
+/*FOR CAROUSEL*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  object-fit: cover;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(10,10,10,0.5);
+  color: white;
+  font-size: 30px;
+  font-family: Montserrat SemiBold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 500px) {
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  }
+.text {
+  font-size: 20px;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*FOR NAVBAR*/
+.navbar{
+	overflow: hidden;
+  background-color: white;
+  text-align: center;
+  font-family: Rockwell;
+}
+
+.navbar a, p{
+  float: none;
+  display: inline-block;
+  padding: 14px;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(60,60,60);
+}
+
+.navbar a:hover {
+  color: #053EFF;
+}
+
+.navbar a.active {
+  color: #0000FF;
+  background-color: transparent;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+.navbar a {
+	 padding: 16px 0px;
+    display: block;
+    text-align: center;
+  }
+
+.navbar p {
+    display: none;
+  }
+}
+
+/*FOR HOME CONTENT*/
+.homeContent {
+  color: rgb(60,60,60);
+  padding: 50px 120px 50px 120px;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.homeContent h1, .serviceContent h1{
+  margin-bottom: 5px;
+}
+
+.homeContent h6, .serviceContent h6{
+  margin: 0px;
+}
+
+.homeContent p, .serviceContent p{
+  font-size: 16px;
+  margin: 0px;
+}
+
+.gap{
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid #CECECE;
+}
+
+/*FOR SERVICE CONTENT*/
+.serviceContent{
+  color: rgb(60,60,60);
+  padding: 20px 0px 120px 0px;
+  text-align: center;
+}
+
+.column {
+  padding-top: 50px;
+  float: left;
+  width: 25%;
+}
+
+.column p{
+  font-size: 12px;
+  margin: 0px;
+}
+
+.column img{
+  transition: transform .2s;
+}
+
+.column img:hover{
+  transform: scale(1.05);
+}
+
+.row{
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #053EFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat SemiBold;
+  font-size: 15px;
+  width: 180px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 50px 0px 0px 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*FOR FOOTER*/
+.footer {
+  cursor: pointer;
+  border-top: 1px solid #CECECE;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  height: 15px;
+  padding: 1px 0px;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.footer a:hover {
+  color: #053EFF;
+}
+
+.footerLeft a{
+  float: left;
+  display: inline-block;
+  color: #919191;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footerRight a{
+  float: right;
+  display: inline-block;
+  color: #919191;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footerLeft a.active {
+  color: #0000FF;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+.footerLeft a, .footerRight a{
+  float: none;
+  }
+}

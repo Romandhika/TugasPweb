@@ -1,0 +1,91 @@
+.header {
+  background-color: white;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.logo {
+  font-family: Brandon Text;
+  font-size: 40pt;
+  color: rgb(60,60,60);
+}
+
+.logo2 {
+  font-size: 10pt;
+  font-family: Brandon Text;
+  color: rgb(60,60,60);
+}
+
+#centerMode {
+  text-align:center;
+}
+
+/*FOR NAVBAR*/
+.navbar{
+	  overflow: hidden;
+  	background-color: white;
+    text-align: center;
+    font-family: Rockwell;
+}
+
+.navbar a, p{
+    float: none;
+    display: inline-block;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(60,60,60);
+}
+
+.navbar a:hover {
+  color: #053EFF;
+}
+
+.navbar a.active {
+  color: #0000FF;
+  background-color: transparent;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+.navbar a {
+	padding: 16px 0px;
+    display: block;
+    text-align: center;
+  }
+
+.navbar p {
+    display: none;
+  }
+
+}
+
+body {
+  margin: auto;
+  font-family: Montserrat;
+}
+
+.main{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th{
+    background-color: #CECECE;
+    
+}
+
+table, th ,td{
+    border: 1px solid black;
+    vertical-align: top;
+}
